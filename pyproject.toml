@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+markers=[
+    "negative_test : The negative testcases",
+    "positive_test : The positive testcases"
+]

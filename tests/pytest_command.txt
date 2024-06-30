@@ -1,0 +1,14 @@
+# run all tests
+python -m pytest
+
+# run tests with marker - negative_test
+python -m pytest -m negative_test
+
+python -m pytest -m "not negative_test"
+
+# duration
+python -m pytest --durations=1
+
+# to get test coverage (after installing coverage)
+python -m coverage run -m pytest
+python -m coverage report -m
